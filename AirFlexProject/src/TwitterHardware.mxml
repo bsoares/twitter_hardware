@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app:AirTwitterHardware
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:app="br.com.bsoares.air.airtwitterhardware.*"
+	layout="absolute"
+	title=" Twitter Hardware ">
+	<mx:VBox x="0" y="0" width="100%" height="100%" paddingBottom="8" paddingLeft="8" paddingRight="8" paddingTop="8">
+		<mx:HBox width="100%" verticalAlign="middle">
+			<mx:Label text="Twitter RSS:" fontWeight="bold"/>
+			<mx:TextInput width="100%" id="txtTwitterRss">
+				<mx:text>http://twitter.com/statuses/user_timeline/15935351.rss</mx:text>
+			</mx:TextInput>
+			<mx:Button label="Read" id="cmdRead"/>
+		</mx:HBox>
+		<mx:HBox width="100%">
+			<mx:Label text="Twitter:" fontWeight="bold"/>
+			<mx:Label width="100%" id="lblTwitter"/>
+		</mx:HBox>
+		<mx:DataGrid width="100%" height="100%" id="gridMessages">
+			<mx:columns>
+				<mx:DataGridColumn headerText="Message" dataField=""/>
+			</mx:columns>
+		</mx:DataGrid>
+		<mx:HBox width="100%" verticalAlign="middle" horizontalAlign="right">
+			<mx:Button label="Reload" id="cmdReload"/>
+		</mx:HBox>
+	</mx:VBox>
+</app:AirTwitterHardware>
